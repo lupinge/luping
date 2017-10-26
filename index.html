@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>test</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <style type="text/css">
+        body, ul, ol, li, p, img, h1, h2, h3, h4, h5, h6, input, form, button {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          border: none;
+          zoom: 1;
+        }
+
+        .wrap{
+          width: 100%;
+          height: 500px;
+          border: 1px solid red;
+          overflow: hidden;
+
+          display: flex;
+          display: -webkit-flex;
+        }
+        .left{
+            width: 200px;
+            height: 200px;
+            flex-grow: 0;
+            background-color: #e5e5e5;
+        }
+        .right{
+            width: 200px;
+            height: 200px;
+            flex-grow: 0;
+            background-color: #e5e5e5;
+            align-self: flex-end;
+        }
+        .center{
+            flex-grow: 1;
+            height: 200px;
+            background-color: gray;
+
+        }
+
+        .test1 span{
+            background-color: #e5e5e5;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="left">left</div>
+    <div class="center">中间中间中间中间中间中间中中间</div>
+    <div class="right">right</div>
+</div>
+<div class="test1">
+    <span>123</span>
+    <span>456</span>
+    <span>789</span>
+</div>
+</body>
+</html>
